@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff7300, #ff0021);
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #FF7300, #FF0021);
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background: linear-gradient(45deg, #FF7300, #FF0021);
+}
+
+.status {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: linear-gradient(45deg, #FF7300, #FF0021);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background: linear-gradient(45deg, #FF7300, #FF0021);
+}
+
+.reset-button:focus {
+    outline: none;
+}
